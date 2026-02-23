@@ -9,6 +9,7 @@
   gap: 2vw;
   flex-wrap: wrap;
   background-color: rgb(16, 15, 15);
+  flex-direction: column;
 }
 
 .dataCard {
