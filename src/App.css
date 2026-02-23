@@ -40,6 +40,10 @@ h2 {
   color: rgb(135, 133, 128);
   margin-top: -2rem;
 }
+
+a {
+  color: rgb(208, 162, 21);
+}
 /* 
 .revenueCard {
   width: 92%; 
