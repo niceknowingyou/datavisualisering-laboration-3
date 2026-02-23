@@ -30,6 +30,7 @@ export const App = () => {
 
       <div className="dataCard categoryCard">Chart 3</div>
       <div className="dataCard categoryCard">Chart 67</div>
+      <p className="bg-black">hej</p>
 
     </div>
   );
