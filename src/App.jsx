@@ -8,6 +8,8 @@ export const App = () => {
   return (
     <div className="">
       <div className="App">
+        <h1>Spotify</h1>
+        <h2>wrap it up...</h2>
         <div className="dataCard revenueCard">Chart 1
           <Bar
             data={{
