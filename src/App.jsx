@@ -6,31 +6,31 @@ import "./App.css";
 
 export const App = () => {
   return (
-    <div className="">
-      <div className="App">
-        <div className="dataCard revenueCard">Chart 1
-          <Bar
-            data={{
-              labels: ["A", "B", "C"],
-              datasets: [
-                {
-                  label: "Oliver",
-                  data: [200,300,400],
-                },
-                {
-                  label: "Teodor",
-                  data: [90, 80, 70],
-                },
-              ],
-            }}
-          />
-          </div>
+    <div className="App">
+      <div className="dataCard revenueCard">Chart 1
+        <Bar
+          data={{
+            labels: ["A", "B", "C"],
+            datasets: [
+              {
+                label: "Oliver",
+                data: [200,300,400],
+              },
+              {
+                label: "Teodor",
+                data: [90, 80, 70],
+              },
+            ],
+          }}
+        />
+        </div>
 
 
       <div className="dataCard customerCard">Chart 2</div>
 
       <div className="dataCard categoryCard">Chart 3</div>
       <div className="dataCard categoryCard">Chart 67</div>
+      <p className="bg-black">hej</p>
 
     </div>
   );
