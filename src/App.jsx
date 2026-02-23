@@ -9,7 +9,8 @@ export const App = () => {
     <div className="">
       <div className="App">
         <h1>Spotify</h1>
-        <h2>wrap it up...</h2>
+        <h2>en hemsida av oliver & teodor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequuntur non delectus quisquam quo! Aut voluptas voluptatum cumque itaque mollitia laudantium, nam quae possimus cum corporis. Repellendus, modi. Placeat, eius?</p>
         <div className="dataCard revenueCard">Chart 1
           <Bar
             data={{
