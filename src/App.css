@@ -8,29 +8,29 @@
   align-content: center;
   gap: 2vw;
   flex-wrap: wrap;
-  background-color: white;
+  background-color: rgb(16, 15, 15);
 }
 
 .dataCard {
-  background-color: rgb(206, 205, 195);
+  background-color: rgb(28, 27, 26);
   border-radius: 0.5em;
-  border-color: black;
-  border-width: 500px;
+  /* border-color: white;
+  border-width: 500px; */
   box-shadow: black;
   padding: 30px;
 }
-
+/* 
 .revenueCard {
-  width: 92%;
-  height: 20rem;
-}
+  width: 92%; 
+  height: 0;
+} */
 
-.customerCard {
-  width: 50%;
+/* .customerCard {
+  width: 50%; 
   height: 20rem;
 }
 
 .categoryCard {
   width: 40%;
   height: 20rem;
-}
+} */
