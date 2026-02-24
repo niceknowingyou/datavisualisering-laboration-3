@@ -47,8 +47,25 @@ export const App = () => {
               data: [14.8, 18.0],
             },
             {
-              label: "Utbetalningar till musik (miljarder euro)", // Ändra till SEK, USD eller Euro vi får bestämma sen.
+              label: "Utbetalningar till musik (miljarder euro)", // Ändra till SEK, USD eller Euro vi får bestämma
               data: [9.4, 10.3],
+            },
+          ],
+        }}
+      />
+
+      <Bar
+        data={{
+          labels: [
+            "Spotify intäkter",
+            "Utbetalningar till industrin",
+            "Topp 1% artister (uppskattat)",
+            "Övriga artister",
+          ],
+          datasets: [
+            {
+              label: "2025 (miljarder euro)",
+              data: [18.0, 10.3, 7.2, 3.1],
             },
           ],
         }}
