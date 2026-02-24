@@ -23,11 +23,18 @@
   box-shadow: 1px 1px 50px black;
   padding: 20px;
   height: 800px;
+  margin-bottom: 200px;
 }
 
 .dataCard:hover {
   box-shadow: 1px 1px 50px rgb(206, 205, 195);
   transition: 1s;
+}
+
+.inText {
+  color: rgb(208, 162, 21);
+  font-weight: 800;
+  font-size: 20px;
 }
 
 h1 {

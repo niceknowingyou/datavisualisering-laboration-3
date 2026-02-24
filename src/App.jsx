@@ -10,19 +10,19 @@ export const App = () => {
       <div className="App">
         <h1>Spotify</h1>
         <h2>en hemsida av oliver & teodor för <u><a href="https://www.sh.se/program--kurser/program/grund/it-medier-och-design">Södertörns Högskola</a></u></h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequuntur non delectus quisquam quo! Aut voluptas voluptatum cumque itaque mollitia laudantium, nam quae possimus cum corporis. Repellendus, modi. Placeat, eius?</p>
-        <div className="dataCard revenueCard">Chart 1
+        <p>I 2014 så räknades det fram att det fanns ungefär <span className="inText">11 miljoner</span> artister hos Spotify vilket är en ökning på <span className="inText">1.7 miljoner</span> från 2013. Med så här många artister vilka <em>lyssnar</em> faktiskt på musken?</p>
+        <div className="dataCard revenueCard">
           <Bar
             data={{
-              labels: ["A", "B", "C"],
+              labels: ["A"],
               datasets: [
                 {
-                  label: "Oliver",
-                  data: [200,300,400],
+                  label: "Artister på Spotify",
+                  data: [11e7],
                 },
                 {
-                  label: "Teodor",
-                  data: [90, 80, 70],
+                  label: "Artister som har mer än 10 lyssnare per månad",
+                  data: [1.58e7],
                 },
               ],
             }}
@@ -30,13 +30,13 @@ export const App = () => {
           </div>
 
 
-        <div className="dataCard customerCard">Uploaded songs to spotify every year.
+        <div className="dataCard customerCard">
           <Line
             data={{
               labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
               datasets: [
                 {
-                  label: "Uploaded songs",
+                  label: "Låtar uppladdade på Spotify",
                   data: [7e6, 15e6, 22e6, 22e6, 36e6, 40e6, 36e6],
                 },
               ],
