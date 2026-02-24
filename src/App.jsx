@@ -1,5 +1,5 @@
 import React from "react";
-import { Chart as ChartJS } from "chart.js/auto";
+import { Chart as ChartJS, scales } from "chart.js/auto";
 import { Bar, Doughnut, Line, Bubble } from "react-chartjs-2";
 import "./App.css";
 import Stat from "./stat";
@@ -33,6 +33,51 @@ export const App = () => {
             {
               label: "Premium (miljoner)",
               data: [30, 96, 155, 205, 236, 263, 290],
+            },
+          ],
+        }}
+      />
+      <p>Streaming står för</p>
+      <div className="flex">
+        <Stat
+          statNumber="65%"
+          statText="Globala musikintäkter"
+          statColor="red"
+        />
+        <Stat
+          statNumber="65%"
+          statText="Globala musikintäkter"
+          statColor="red"
+        />
+        <Stat
+          statNumber="65%"
+          statText="Globala musikintäkter"
+          statColor="red"
+        />
+      </div>
+      <Bar
+        options={{
+          scales: {
+            x: {
+              stacked: true
+            },
+            y: {
+              stacked: true
+            }
+          },
+        }}
+        data={{
+          labels: ["2022", "2023", "2024"],
+
+          datasets: [
+            {
+              label: "Streamingökning",
+              data: [11.4, 10.4, 7.3],
+            },
+
+            {
+              label: "Vinylökning",
+              data: [3.8, 13.4, -4],
             },
           ],
         }}
