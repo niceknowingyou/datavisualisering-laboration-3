@@ -11,7 +11,6 @@ export const App = () => {
       <h1>Spotify</h1>
       <h2>en hemsida av oliver & teodor för <u><a href="https://www.sh.se/program--kurser/program/grund/it-medier-och-design">Södertörns Högskola</a></u></h2>
       <p>I 2014 så räknades det fram att det fanns ungefär <span className="inText">11 miljoner</span> artister hos Spotify vilket är en ökning på <span className="inText">1.7 miljoner</span> från 2013. Med så här många artister vilka <em>lyssnar</em> faktiskt på musken?</p>
-      <Stat statNumber="100%" statText="Profit" statColor="#3b345f"/>
       <Bar
         data={{
           labels: ["2024"],
@@ -32,6 +31,8 @@ export const App = () => {
         }}
       />
 
+
+<Stat statNumber="Spotify pays $0.003- $0.005 per stream" statText="Det blir ~$4.000 för 1 miljon streams" statColor="red"/>
           <Bar
             data={{
               labels: ["2024"],
@@ -51,7 +52,9 @@ export const App = () => {
             }}
           />
 
-      <Line
+
+
+        <Line
         data={{
           labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
           datasets: [
@@ -62,8 +65,6 @@ export const App = () => {
           ],
         }}
       />
-
-
 
       <Line
         data={{
