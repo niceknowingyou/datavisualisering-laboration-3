@@ -1,6 +1,6 @@
 import React from "react";
 import { Chart as ChartJS } from "chart.js/auto";
-import { Bar, Doughnut, Line } from "react-chartjs-2";
+import { Bar, Doughnut, Line, Bubble } from "react-chartjs-2";
 
 import "./App.css";
 
@@ -32,7 +32,24 @@ export const App = () => {
             }}
           />
 
-
+          <Bar
+            data={{
+              labels: ["2024"],
+              datasets: [
+                {
+                  label: "Artister på Spotify",
+                  data: [11e7],
+                },
+                {
+                  label: "Artister som tjänar mer än 10,000kr per månad",
+                  data: [2860000],
+                },
+              ],
+            }}
+            options={{
+              indexAxis: 'y',
+            }}
+          />
 
           <Line
             data={{
