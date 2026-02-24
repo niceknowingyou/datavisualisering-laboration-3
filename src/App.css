@@ -15,7 +15,7 @@
   flex-direction: column;
 }
 
-.dataCard {
+/* .dataCard {
   background-color: rgb(28, 27, 26);
   border-radius: 0.5em;
   box-shadow: 1px 1px 50px black;
@@ -28,7 +28,7 @@
 .dataCard:hover {
   box-shadow: 1px 1px 50px rgb(206, 205, 195);
   transition: 1s;
-}
+} */
 
 .inText {
   color: rgb(208, 162, 21);
