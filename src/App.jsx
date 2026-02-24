@@ -11,7 +11,7 @@ export const App = () => {
       <h2>
         en hemsida av oliver & teodor för{" "}
         <u>
-          <a href="https://www.sh.se/program--kurser/program/grund/it-medier-och-design">
+          <a href="https://www.sh.se/program--kurser/program/grund/it-medier-och-design" target="_blank">
             Södertörns Högskola
           </a>
         </u>
@@ -24,7 +24,7 @@ export const App = () => {
       </p>
       <Line
         data={{
-          labels: ["2016", "2018", "2020", "2022", "2023", "2024", "2025"],
+          labels: ["2016", "2018", "2020", "2022", "2023", "2024", "2025"], // ta bort allt annat än 2022 och framåt
           datasets: [
             {
               label: "Monthly Active Users (miljoner)",
@@ -37,7 +37,16 @@ export const App = () => {
           ],
         }}
       />
-      <p>Streaming står för</p>
+      <p>
+        Som det visar på diagramet så har Spotifys mängd av användare ökat
+        extremt, antalet "monthly users" gick från 489 miljoner till{" "}
+        <span className="inText"> 751 miljoner </span> på bara tre år. Detta är
+        en ökning på över <span className="inText"> 260 miljoner </span>{" "}
+        användare. Trots att streamingmarknaden inte är ny och spännande längre
+        så ökar användar basen fortfarande kraftigt.
+      </p>
+      <p className="litenText">Lägg in källa här</p>
+      {/* <p>Streaming står för</p>
       <div className="flex">
         <Stat
           statNumber="65%"
@@ -54,16 +63,16 @@ export const App = () => {
           statText="Globala musikintäkter"
           statColor="red"
         />
-      </div>
+      </div> */}
       <Bar
         options={{
           scales: {
             x: {
-              stacked: true
+              stacked: true,
             },
             y: {
-              stacked: true
-            }
+              stacked: true,
+            },
           },
         }}
         data={{
@@ -99,9 +108,12 @@ export const App = () => {
         }}
       />
       <p>
-        That’s why this year our number one priority is to help more new music and new artists cut through the noise and form real connections with fans.
+        "That’s why this year our{" "}
+        <span className="inText">number one priority</span> is to help more new
+        music and new artists cut through the noise and form real connections
+        with fans."
       </p>
-      <p>Direkt citat från spotify 2026</p>
+      <p className="litenText">Direkt citat från spotify 2026</p>
       <Bar
         data={{
           labels: [
