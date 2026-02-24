@@ -6,33 +6,63 @@ import "./App.css";
 
 export const App = () => {
   return (
-    <div className="h-screen w-screen flex flex-row justify-center align-items-center align-content-center gap-10 wrap bg-background">
-      <div className="bg- border shadow-xl p-[30px]">Chart 1
-        <Bar
-          data={{
-            labels: ["A", "B", "C"],
-            datasets: [
-              {
-                label: "Oliver",
-                data: [200,300,400],
-              },
-              {
-                label: "Teodor",
-                data: [90, 80, 70],
-              },
-            ],
-          }}
-        />
+
+      <div className="App">
+        <h1>Spotify</h1>
+        <h2>en hemsida av oliver & teodor för <u><a href="https://www.sh.se/program--kurser/program/grund/it-medier-och-design">Södertörns Högskola</a></u></h2>
+        <p>I 2014 så räknades det fram att det fanns ungefär <span className="inText">11 miljoner</span> artister hos Spotify vilket är en ökning på <span className="inText">1.7 miljoner</span> från 2013. Med så här många artister vilka <em>lyssnar</em> faktiskt på musken?</p>
+        <div className="dataCard revenueCard">
+          <Bar
+            data={{
+              labels: ["2024"],
+              datasets: [
+                {
+                  label: "Artister på Spotify",
+                  data: [11e7],
+                },
+                {
+                  label: "Artister som har mer än 10 lyssnare per månad",
+                  data: [1.58e7],
+                },
+                {
+                  label: "Artister med mer än 1000 lyssnare per månad",
+                  data: [742600],
+                }
+              ],
+            }}
+          />
+          </div>
+
+
+        <div className="dataCard customerCard">
+          <Line
+            data={{
+              labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+              datasets: [
+                {
+                  label: "Låtar uppladdade på Spotify",
+                  data: [7e6, 15e6, 22e6, 22e6, 36e6, 40e6, 36e6],
+                },
+              ],
+            }}
+          />
         </div>
 
+        <div className="dataCard customerCard">Spotify streams for songs uploaded in that year.
+          <Line
+            data={{
+              labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+              datasets: [
+                {
+                  label: "Streams",
+                  data: [4.24e9, 5.3e9, 3.67e9, 3.81e9, 4.27e9, 2.8e9, 3.51e9],
+                },
+              ],
+            }}
+          />
+        </div>
+      </div>
 
-      <div className="dataCard customerCard">Chart 2</div>
-
-      <div className="dataCard categoryCard">Chart 3</div>
-      <div className="dataCard categoryCard">Chart 67</div>
-      <p className="bg-background">hej</p>
-
-    </div>
   );
 };
 
