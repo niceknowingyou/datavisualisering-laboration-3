@@ -6,8 +6,8 @@ import "./App.css";
 
 export const App = () => {
   return (
-    <div className="App">
-      <div className="dataCard revenueCard">Chart 1
+    <div className="h-screen w-screen flex flex-row justify-center align-items-center align-content-center gap-10 wrap bg-background">
+      <div className="bg- border shadow-xl p-[30px]">Chart 1
         <Bar
           data={{
             labels: ["A", "B", "C"],
@@ -30,7 +30,7 @@ export const App = () => {
 
       <div className="dataCard categoryCard">Chart 3</div>
       <div className="dataCard categoryCard">Chart 67</div>
-      <p className="bg-black">hej</p>
+      <p className="bg-background">hej</p>
 
     </div>
   );
