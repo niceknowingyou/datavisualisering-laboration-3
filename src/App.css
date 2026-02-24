@@ -3,7 +3,7 @@
 
 .App {
   height: 100vh;
-  max-width: 2000px;
+  max-width: 100%;
   padding-left: 200px;
   padding-right: 200px;
   display: flex;
