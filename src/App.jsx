@@ -14,7 +14,7 @@ export const App = () => {
         <div className="dataCard revenueCard">
           <Bar
             data={{
-              labels: ["A"],
+              labels: ["2024"],
               datasets: [
                 {
                   label: "Artister på Spotify",
@@ -24,6 +24,10 @@ export const App = () => {
                   label: "Artister som har mer än 10 lyssnare per månad",
                   data: [1.58e7],
                 },
+                {
+                  label: "Artister med mer än 1000 lyssnare per månad",
+                  data: [742600],
+                }
               ],
             }}
           />
