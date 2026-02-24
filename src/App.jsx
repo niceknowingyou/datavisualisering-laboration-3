@@ -38,6 +38,22 @@ export const App = () => {
         }}
       />
 
+      <Line
+        data={{
+          labels: ["2024", "2025"],
+          datasets: [
+            {
+              label: "Intäkter (miljarder euro)",
+              data: [14.8, 18.0],
+            },
+            {
+              label: "Utbetalningar till musik (miljarder euro)", // Ändra till SEK, USD eller Euro vi får bestämma sen.
+              data: [9.4, 10.3],
+            },
+          ],
+        }}
+      />
+
       <Bar
         data={{
           labels: ["2024"],
