@@ -98,7 +98,10 @@ export const App = () => {
           ],
         }}
       />
-
+      <p>
+        That’s why this year our number one priority is to help more new music and new artists cut through the noise and form real connections with fans.
+      </p>
+      <p>Direkt citat från spotify 2026</p>
       <Bar
         data={{
           labels: ["2024"],
