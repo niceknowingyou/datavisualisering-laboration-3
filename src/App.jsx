@@ -105,6 +105,10 @@ export const App = () => {
           ],
         }}
       />
+      {/* 
+      <p>
+        Fysis musik har fortfarande stor betydelse men som vi ser så sjönk vinylen 2024 medan streaming fortästter att öka.
+      </p> */}
 
       {/* <Line
         data={{
@@ -125,7 +129,7 @@ export const App = () => {
           ],
         }}
       /> */}
-      
+
       <p>
         "That’s why this year our{" "}
         <span className="inText">number one priority</span> is to help more new
@@ -156,6 +160,14 @@ export const App = () => {
           ],
         }}
       />
+      <p>
+        Spotify betalde alltså ut över{" "}
+        <span className="inText">10 miljarder euro</span> till musik industrin
+        bara 2025. Trots det så är en extremt stor del av intäkterna som går
+        till topp 1% av artisterna och majoriteten delar på den relativt lilla
+        andelen av intäkterna.
+      </p>
+      <p className="litenText">Lägg in källa här</p>
 
       <Bar
         data={{
@@ -182,6 +194,14 @@ export const App = () => {
           ],
         }}
       />
+
+      <p>
+        Det finns en enorm mängd av artister på Spotify, dock är det en väldigt
+        liten andel som når några lyssnare alls. Att ha fler än 1000 lyssnare
+        per månad på Spotify är ovanligt i jämförelse med hur många som kämpar
+        för att hitta sin publik.
+      </p>
+      <p className="litenText">Lägg in källa här</p>
 
       <Stat
         statNumber="Spotify pays $0.003- $0.005 per stream"
@@ -210,7 +230,13 @@ export const App = () => {
           indexAxis: "y",
         }}
       />
-
+      <p>
+        Detta betyder alltså att ungerfär <span className="inText">2.6%</span>{" "}
+        av alla artister på Spotify tjänar mer än 10 000kr per månad på
+        streaming. Med andra ord så gör ungefär{" "}
+        <span className="inText">97.4%</span> inte det.
+      </p>
+      <p className="litenText">Lägg in källa här</p>
       <Line
         data={{
           labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
@@ -238,7 +264,6 @@ export const App = () => {
           ],
         }}
       /> */}
-
     </div>
   );
 };
