@@ -1,8 +1,11 @@
 import React from "react";
-import { Chart as ChartJS, scales } from "chart.js/auto";
+import { Chart as ChartJS, scales, defaults } from "chart.js/auto";
 import { Bar, Doughnut, Line, Bubble } from "react-chartjs-2";
 import "./App.css";
 import Stat from "./stat";
+
+defaults.maintainAspectRation = false;
+defaults.responsive = true;
 
 export const App = () => {
   return (
@@ -11,7 +14,10 @@ export const App = () => {
       <h2>
         en hemsida av oliver & teodor för{" "}
         <u>
-          <a href="https://www.sh.se/program--kurser/program/grund/it-medier-och-design" target="_blank">
+          <a
+            href="https://www.sh.se/program--kurser/program/grund/it-medier-och-design"
+            target="_blank"
+          >
             Södertörns Högskola
           </a>
         </u>
@@ -29,10 +35,14 @@ export const App = () => {
             {
               label: "Monthly Active Users (miljoner)",
               data: [100, 200, 345, 489, 602, 675, 751],
+              backgroundColor: "rgb(135, 154, 57)",
+              borderColor: "rgb(135, 154, 57)",
             },
             {
               label: "Premium (miljoner)",
               data: [30, 96, 155, 205, 236, 263, 290],
+              backgroundColor: "rgb(67, 133, 190)",
+              borderColor: "rgb(67, 133, 190)",
             },
           ],
         }}
@@ -82,31 +92,40 @@ export const App = () => {
             {
               label: "Streamingökning",
               data: [11.4, 10.4, 7.3],
+              backgroundColor: "rgb(102, 128, 11)",
+              borderColor: "rgb(102, 128, 11)",
             },
 
             {
               label: "Vinylökning",
               data: [3.8, 13.4, -4],
+              backgroundColor: "rgb(67, 133, 190)",
+              borderColor: "rgb(67, 133, 190)",
             },
           ],
         }}
       />
 
-      <Line
+      {/* <Line
         data={{
           labels: ["2024", "2025"],
           datasets: [
             {
               label: "Intäkter (miljarder euro)",
               data: [14.8, 18.0],
+              backgroundColor: "rgb(67, 133, 190)",
+              borderColor: "rgb(67, 133, 190)",
             },
             {
               label: "Utbetalningar till musik (miljarder euro)", // Ändra till SEK, USD eller Euro vi får bestämma
               data: [9.4, 10.3],
+              backgroundColor: "rgb(102, 128, 11)",
+              borderColor: "rgb(102, 128, 11)",
             },
           ],
         }}
-      />
+      /> */}
+      
       <p>
         "That’s why this year our{" "}
         <span className="inText">number one priority</span> is to help more new
@@ -126,6 +145,13 @@ export const App = () => {
             {
               label: "2025 (miljarder euro)",
               data: [18.0, 10.3, 7.2, 3.1],
+              backgroundColor: [
+                "rgb(102, 128, 11)",
+                "rgb(87, 108, 11)",
+                "rgb(64, 79, 8)",
+                "rgb(39, 48, 5)",
+              ],
+              borderColor: "rgb(102, 128, 11)",
             },
           ],
         }}
@@ -138,14 +164,20 @@ export const App = () => {
             {
               label: "Artister på Spotify",
               data: [11e7],
+              backgroundColor: "rgb(67, 133, 190)",
+              borderColor: "rgb(67, 133, 190)",
             },
             {
               label: "Artister som har mer än 10 lyssnare per månad",
               data: [1.58e7],
+              backgroundColor: "rgb(102, 128, 11)",
+              borderColor: "rgb(102, 128, 11)",
             },
             {
               label: "Artister med mer än 1000 lyssnare per månad",
               data: [742600],
+              backgroundColor: "#C0A0E9",
+              borderColor: "#C0A0E9",
             },
           ],
         }}
@@ -163,10 +195,14 @@ export const App = () => {
             {
               label: "Artister på Spotify",
               data: [11e7],
+              backgroundColor: "rgb(102, 128, 11)",
+              borderColor: "rgb(102, 128, 11)",
             },
             {
               label: "Artister som tjänar mer än 10,000kr per månad",
               data: [2860000],
+              backgroundColor: "rgb(67, 133, 190)",
+              borderColor: "rgb(67, 133, 190)",
             },
           ],
         }}
@@ -182,22 +218,27 @@ export const App = () => {
             {
               label: "Låtar uppladdade på Spotify",
               data: [7e6, 15e6, 22e6, 22e6, 36e6, 40e6, 36e6],
+              backgroundColor: "rgb(102, 128, 11)",
+              borderColor: "rgb(102, 128, 11)",
             },
           ],
         }}
       />
 
-      <Line
+      {/* <Line
         data={{
           labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
           datasets: [
             {
               label: "Streams",
               data: [4.24e9, 5.3e9, 3.67e9, 3.81e9, 4.27e9, 2.8e9, 3.51e9],
+              backgroundColor: "rgb(67, 133, 190)",
+              borderColor: "rgb(67, 133, 190)",
             },
           ],
         }}
-      />
+      /> */}
+
     </div>
   );
 };
