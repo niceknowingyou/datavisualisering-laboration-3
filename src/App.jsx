@@ -10,7 +10,7 @@ defaults.responsive = true;
 export const App = () => {
   return (
     <div className="App">
-      <h1>Spotify</h1>
+      <h1  >Spotify</h1>
       <h2>
         en hemsida av oliver & teodor för{" "}
         <u>
@@ -55,7 +55,7 @@ export const App = () => {
         användare. Trots att streamingmarknaden inte är ny och spännande längre
         så ökar användar basen fortfarande kraftigt.
       </p>
-      <p className="litenText">Lägg in källa här</p>
+      <p className="litenText">https://investors.spotify.com</p>
       {/* <p>Streaming står för</p>
       <div className="flex">
         <Stat
@@ -105,6 +105,9 @@ export const App = () => {
           ],
         }}
       />
+            <p className="litenText">
+              IFPI Global Music Report 2023–2025
+      </p>
       {/* 
       <p>
         Fysis musik har fortfarande stor betydelse men som vi ser så sjönk vinylen 2024 medan streaming fortästter att öka.
@@ -136,7 +139,8 @@ export const App = () => {
         music and new artists cut through the noise and form real connections
         with fans."
       </p>
-      <p className="litenText">Direkt citat från spotify 2026</p>
+      <p className="litenText">Direkt citat från spotify 2026 
+        (Loud & Clear / Spotify newsroom)</p>
       <Bar
         data={{
           labels: [
@@ -167,7 +171,7 @@ export const App = () => {
         till topp 1% av artisterna och majoriteten delar på den relativt lilla
         andelen av intäkterna.
       </p>
-      <p className="litenText">Lägg in källa här</p>
+      <p className="litenText">https://loudandclear.byspotify.com</p>
 
       <Bar
         data={{
@@ -201,7 +205,7 @@ export const App = () => {
         per månad på Spotify är ovanligt i jämförelse med hur många som kämpar
         för att hitta sin publik.
       </p>
-      <p className="litenText">Lägg in källa här</p>
+      <p className="litenText">Loud & Clear by Spotify (2024) + RouteNote-analys.</p>
 
       <Stat
         statNumber="Spotify pays $0.003- $0.005 per stream"
@@ -236,7 +240,7 @@ export const App = () => {
         streaming. Med andra ord så gör ungefär{" "}
         <span className="inText">97.4%</span> inte det.
       </p>
-      <p className="litenText">Lägg in källa här</p>
+      <p className="litenText">Loud & Clear by Spotify, Variety, Musician Wave & Soundcharts</p>
       <Line
         data={{
           labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
@@ -250,6 +254,7 @@ export const App = () => {
           ],
         }}
       />
+      <p className="litenText">Spotify for Artists Blog och Music Business Worldwide</p>
 
       {/* <Line
         data={{
