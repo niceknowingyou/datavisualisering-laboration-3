@@ -22,10 +22,10 @@ export const App = () => {
           </a>
         </u>
       </h2>
-      <p>
+      <p className="!text-5xl">
         I 2014 så räknades det fram att det fanns ungefär{" "}
-        <span className="inText">11 miljoner</span> artister hos Spotify vilket
-        är en ökning på <span className="inText">1.7 miljoner</span> från 2013.
+        <span className="inText2">11 miljoner</span> artister hos Spotify vilket
+        är en ökning på <span className="inText2">1.7 miljoner</span> från 2013.
         Med så här många artister vilka <em>lyssnar</em> faktiskt på musken?
       </p>
       <Line
@@ -208,7 +208,7 @@ export const App = () => {
       <p className="litenText">Loud & Clear by Spotify (2024) + RouteNote-analys.</p>
 
       <Stat
-        statNumber="Spotify pays $0.003- $0.005 per stream"
+        statNumber="'Spotify pays $0.003- $0.005 per stream'"
         statText="Det blir ~$4.000 för 1 miljon streams"
         statColor="red"
       />
