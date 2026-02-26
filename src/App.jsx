@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react";
 import { Chart as ChartJS, scales, defaults } from "chart.js/auto";
 import { Bar, Doughnut, Line, Bubble } from "react-chartjs-2";
 import "./App.css";
@@ -10,24 +11,33 @@ defaults.responsive = true;
 export const App = () => {
   return (
     <div className="App">
-      <h1  >Spotify</h1>
-      <h2>
-        en hemsida av oliver & teodor för{" "}
-        <u>
-          <a
-            href="https://www.sh.se/program--kurser/program/grund/it-medier-och-design"
-            target="_blank"
-          >
-            Södertörns Högskola
-          </a>
-        </u>
-      </h2>
+      <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0}} transition={{ duration: 0.3, delay: 0 }}>
+        Spotify
+      </motion.h1>
+
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0}} transition={{ duration: 0.3, delay: 0.2 }}>
+        <h2>
+          en hemsida av oliver & teodor för{" "}
+          <u>
+            <a
+              href="https://www.sh.se/program--kurser/program/grund/it-medier-och-design"
+              target="_blank"
+            >
+              Södertörns Högskola
+            </a>
+          </u>
+        </h2>
+      </motion.div>
+
+<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0}} transition={{ duration: 0.3, delay: 0.3 }}>
       <p className="!text-5xl">
         I 2014 så räknades det fram att det fanns ungefär{" "}
         <span className="inText2">11 miljoner</span> artister hos Spotify vilket
         är en ökning på <span className="inText2">1.7 miljoner</span> från 2013.
         Med så här många artister vilka <em>lyssnar</em> faktiskt på musken?
       </p>
+      </motion.div>
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0}} transition={{ duration: 0.5, delay: 0.4 }}>
       <Line
         data={{
           labels: ["2016", "2018", "2020", "2022", "2023", "2024", "2025"], // ta bort allt annat än 2022 och framåt
@@ -47,6 +57,8 @@ export const App = () => {
           ],
         }}
       />
+      </motion.div>
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0}} transition={{ duration: 0.5, delay: 0.4 }}>
       <p>
         Som det visar på diagramet så har Spotifys mängd av användare ökat
         extremt, antalet "monthly users" gick från 489 miljoner till{" "}
@@ -55,6 +67,7 @@ export const App = () => {
         användare. Trots att streamingmarknaden inte är ny och spännande längre
         så ökar användar basen fortfarande kraftigt.
       </p>
+            </motion.div>
       <p className="litenText">https://investors.spotify.com</p>
       {/* <p>Streaming står för</p>
       <div className="flex">
@@ -74,6 +87,7 @@ export const App = () => {
           statColor="red"
         />
       </div> */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0}} transition={{ duration: 0.5, delay: 0.4 }}>
       <Bar
         options={{
           scales: {
@@ -105,9 +119,8 @@ export const App = () => {
           ],
         }}
       />
-            <p className="litenText">
-              IFPI Global Music Report 2023–2025
-      </p>
+      </motion.div>
+      <p className="litenText">IFPI Global Music Report 2023–2025</p>
       {/* 
       <p>
         Fysis musik har fortfarande stor betydelse men som vi ser så sjönk vinylen 2024 medan streaming fortästter att öka.
@@ -139,8 +152,9 @@ export const App = () => {
         music and new artists cut through the noise and form real connections
         with fans."
       </p>
-      <p className="litenText">Direkt citat från spotify 2026 
-        (Loud & Clear / Spotify newsroom)</p>
+      <p className="litenText">
+        Direkt citat från spotify 2026 (Loud & Clear / Spotify newsroom)
+      </p>
       <Bar
         data={{
           labels: [
@@ -205,7 +219,9 @@ export const App = () => {
         per månad på Spotify är ovanligt i jämförelse med hur många som kämpar
         för att hitta sin publik.
       </p>
-      <p className="litenText">Loud & Clear by Spotify (2024) + RouteNote-analys.</p>
+      <p className="litenText">
+        Loud & Clear by Spotify (2024) + RouteNote-analys.
+      </p>
 
       <Stat
         statNumber="'Spotify pays $0.003- $0.005 per stream'"
@@ -240,7 +256,9 @@ export const App = () => {
         streaming. Med andra ord så gör ungefär{" "}
         <span className="inText">97.4%</span> inte det.
       </p>
-      <p className="litenText">Loud & Clear by Spotify, Variety, Musician Wave & Soundcharts</p>
+      <p className="litenText">
+        Loud & Clear by Spotify, Variety, Musician Wave & Soundcharts
+      </p>
       <Line
         data={{
           labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
@@ -254,7 +272,9 @@ export const App = () => {
           ],
         }}
       />
-      <p className="litenText">Spotify for Artists Blog och Music Business Worldwide</p>
+      <p className="litenText">
+        Spotify for Artists Blog och Music Business Worldwide
+      </p>
 
       {/* <Line
         data={{
