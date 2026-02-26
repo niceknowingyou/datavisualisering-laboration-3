@@ -5,7 +5,6 @@ import { Bar, Doughnut, Line, Bubble } from "react-chartjs-2";
 import "./App.css";
 import Stat from "./stat";
 
-defaults.maintainAspectRation = false;
 defaults.responsive = true;
 
 export const App = () => {
