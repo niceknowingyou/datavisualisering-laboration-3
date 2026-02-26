@@ -47,7 +47,7 @@ export const App = () => {
           <span className="inText2">11 miljoner</span> artister hos Spotify
           vilket är en ökning på <span className="inText2">1.7 miljoner</span>{" "}
           från 2013. Med så här många artister vilka <em>lyssnar</em> faktiskt
-          på musken?
+          på musiken?
         </p>
       </motion.div>
       <motion.div
