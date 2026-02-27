@@ -358,7 +358,7 @@ export const App = () => {
       >
         <p className="!text-5xl">
           Antalet låtar växer snabbare än artisters möjligheter att nå till en
-          publik som vill lyssna. Att det är en väldigt liten andel Artister som
+          publik som vill lyssna. Att det är en väldigt liten andel artister som
           lyckas skapa en hållbar inkomst är kanske inte något nytt, men för att
           verkligen förstå nummrerna så hoppas vi att den här sidan har hjälpt
           till att visualisera detta och på så sätt göra det mer smältbart och
