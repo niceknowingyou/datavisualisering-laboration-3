@@ -24,7 +24,7 @@ export const App = () => {
         transition={{ duration: 0.3, delay: 0.2 }}
       >
         <h2>
-          en hemsida av oliver & teodor för{" "}
+          En hemsida av Oliver & Teodor för{" "}
           <u>
             <a
               href="https://www.sh.se/program--kurser/program/grund/it-medier-och-design"
@@ -84,8 +84,8 @@ export const App = () => {
           extremt, antalet "monthly users" gick från 489 miljoner till{" "}
           <span className="inText"> 751 miljoner </span> på bara tre år. Detta
           är en ökning på över <span className="inText"> 260 miljoner </span>{" "}
-          användare. Trots att streamingmarknaden inte är ny och spännande
-          längre så ökar användar basen fortfarande kraftigt.
+          användare. Trots att streamingmarknaden inte är ny längre så ökar
+          användar basen fortfarande kraftigt.
         </p>
       </motion.div>
       <p className="litenText">https://investors.spotify.com</p>
@@ -107,7 +107,7 @@ export const App = () => {
           statColor="red"
         />
       </div> */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -144,7 +144,7 @@ export const App = () => {
           }}
         />
       </motion.div>
-      <p className="litenText">IFPI Global Music Report 2023–2025</p>
+      <p className="litenText">IFPI Global Music Report 2023–2025</p> */}
       {/* 
       <p>
         Fysis musik har fortfarande stor betydelse men som vi ser så sjönk vinylen 2024 medan streaming fortästter att öka.
@@ -183,7 +183,7 @@ export const App = () => {
         </p>
       </motion.div>
       <p className="litenText">
-        Direkt citat från spotify 2026 (Loud & Clear / Spotify newsroom)
+        Direkt citat från Spotify 2026 (Loud & Clear / Spotify newsroom)
       </p>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -227,7 +227,7 @@ export const App = () => {
           andelen av intäkterna.
         </p>
       </motion.div>
-      <p className="litenText">https://loudandclear.byspotify.com</p>
+      <p className="litenText">Loud & Clear by Spotify (2026)</p>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
